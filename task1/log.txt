@@ -1,0 +1,11 @@
+commit 09bbeebf0a3fa2f8ed0f9dc0331d4e05d31e1809 (HEAD -> master)
+Author: white <igrek145@gmail.com>
+Date:   Tue Feb 12 10:04:06 2019 +0300
+
+    added status.txt
+
+commit c946366cf48e798ebf94142a15c8877493e9d33a
+Author: white <igrek145@gmail.com>
+Date:   Tue Feb 12 09:58:29 2019 +0300
+
+    add .gitignore
