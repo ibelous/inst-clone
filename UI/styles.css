@@ -1,0 +1,174 @@
+body {
+    margin:0px;
+}
+header {
+    overflow: hidden;
+    background-color: #3D6898;
+    padding: 20px 10px;
+}
+
+header a {
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+header a.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+header a.username {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+header a.logout {
+    font-size: 25px;
+    text-decoration: underline;
+    color: midnightblue;
+}
+
+header a.logout:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header-right {
+    display: inline-flex;
+    float: right;
+}
+
+footer {
+    overflow: hidden;
+    background-color: #3D6898;
+    padding: 5px 10px;
+}
+
+footer p.name {
+    color: #001433;
+    font-size: 20px;
+    float: left;
+}
+
+footer p.bottomlogo {
+    color: #FFFFFF;
+    font-size: 30px;
+    float: left;
+    position: relative;
+    left: 30%;
+}
+
+footer p.date {
+    color: #C5D0DB;
+    font-size: 15px;
+    float: left;
+    position: relative;
+    left: 22.6%;
+}
+
+footer p.email {
+    color: #001433;
+    font-size: 20px;
+    float: right;
+}
+main {
+
+    background-color: #E7E8EC;
+}
+.up {
+    padding: 10px 5px;
+    display: inline-flex;
+}
+.add {
+    float: left;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #5181B8;
+}
+.FilterBy {
+    padding-left: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #5181B8;
+}
+.filter {
+    padding-top: 7px;
+    padding-left: 20px;
+}
+.acceptFilters {
+    color: #FFFFFF;
+    -webkit-appearance: button;
+    background-color: #2A5885;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 30px;
+}
+.post {
+    margin: 5px;
+    display: block;
+    width: 30pc;
+    border: 1px solid #001433; /* Параметры границы */
+    padding: 5px;
+    background: #FFFFFF; /* Цвет фона */
+    margin-left: 24pc;
+}
+#author {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3D6898;
+}
+#postDate {
+    font-size: 15px;
+    color: #5181B8;
+}
+.photos {
+    display: block;
+    width: 30pc;
+    height: auto;
+    border: 1px solid #C5D0DB;
+}
+.icons {
+    width: 20px;
+    height: auto;
+}
+#edit {
+    margin-left: 15pc;
+}
+#like {
+    width: 30px;
+    height: auto;
+}
+.hashtags {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #597DA3;
+}
+#description {
+    margin-top: 0px;
+    color: #2A5885;
+    font-size: 20px;
+}
+.load {
+    font-size: 25px;
+    color: #FFFFFF;
+    background-color: #2A5885;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    margin-left: 35pc;
+    width: 30px;
+}
