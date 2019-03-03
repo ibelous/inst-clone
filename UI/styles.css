@@ -156,6 +156,7 @@ main {
 }
 #description {
     border: 1px solid #C5D0DB;
+    width: 30pc;
     border-radius: 3px;
     background: #dddddd;
     margin-top: 0px;
