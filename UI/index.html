@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js">
-    </script>
+
     <meta charset="UTF-8">
     <title>InstKiller</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -12,7 +11,7 @@
         <a href="#default" class="logo">InstKiller</a>
         <div class="header-right">
             <a class="username">ibelous</a>
-            <a href=""><img src="icons/logout.svg" title="Log out" class="logout"></a>
+            <button><img src="icons/logout.svg" title="Log out" class="logout"></button>
         </div>
 </header>
 <main>
@@ -20,14 +19,14 @@
         <a href="#addpost" class="add">Add post</a>
         <a class="FilterBy">Filter by:</a>
         <a class="filter">
-            <input type="checkbox">Date
-            <input type="text" name="dateFilter" width="15px">
-            <input type="checkbox">Author name:
+            <input type="checkbox" id="check1"><label for="check1">Date</label>
+            <input type="date" name="dateFilter" width="15px">
+            <input type="checkbox" id="check2"><label for="check2">Author name</label>
             <input type="text" name="authorFilter" width="15px">
-            <input type="checkbox">Hashtags:
+            <input type="checkbox" id="check3"><label for="check3">Hashtags</label>
             <input type="text" name="tagsFilter" width="15px">
         </a>
-        <a href="#ok" class="acceptFilters">Ok</a>
+        <button class="acceptFilters">Ok</button>
     </div>
     <div class="switch">
         <ul class="topmenu">
@@ -39,57 +38,22 @@
             </li>
         </ul>
     </div>
-    <section id="post1"></section>
-    <div class="post">
-        <a id="author">ibelous</a>
-        <a id="postDate">dd.mm.yyyy tt:tt</a>
-        <a href=""><img src="icons/edit.svg" id="edit" class="icons"></a>
-        <a href=""><img src="icons/delete.svg" id="delete" class="icons"></a>
-        <img src="images/img1.jpg" class="photos">
-        <a href=""><img src="icons/like.svg" id="like" class="icons"></a>
-        <a href="" class="hashtags">#some</a>
-        <a href="" class="hashtags">#hash</a>
-        <a href="" class="hashtags">#tags</a>
-        <p id="description">Description of image... And more description... And more... moreeeeeeee....</p>
-    </div>
-    <div class="post">
-        <a id="author">ibelous</a>
-        <a id="postDate">dd.mm.yyyy tt:tt</a>
-        <a href=""><img src="icons/edit.svg" id="edit" class="icons"></a>
-        <a href=""><img src="icons/delete.svg" id="delete" class="icons"></a>
-        <img src="images/img2.jpg" class="photos">
-        <a href=""><img src="icons/like.svg" id="like" class="icons"></a>
-        <a href="" class="hashtags">#some</a>
-        <a href="" class="hashtags">#hash</a>
-        <a href="" class="hashtags">#tags</a>
-        <p id="description">Description of image... And more description...</p>
-    </div>
-    <div class="post">
-        <a id="author">ibelous</a>
-        <a id="postDate">dd.mm.yyyy tt:tt</a>
-        <a href=""><img src="icons/edit.svg" id="edit" class="icons"></a>
-        <a href=""><img src="icons/delete.svg" id="delete" class="icons"></a>
-        <img src="images/img3.jpg" class="photos">
-        <a href=""><img src="icons/like.svg" id="like" class="icons"></a>
-        <a href="" class="hashtags">#some</a>
-        <a href="" class="hashtags">#hash</a>
-        <a href="" class="hashtags">#tags</a>
-        <p id="description">Description of image... And more description...</p>
-    </div>
-    <div class="post">
-        <a id="author">ibelous</a>
-        <a id="postDate">dd.mm.yyyy tt:tt</a>
-        <a href=""><img src="icons/edit.svg" id="edit" class="icons"></a>
-        <a href=""><img src="icons/delete.svg" id="delete" class="icons"></a>
-        <img src="images/img4.jpg" class="photos">
-        <a href=""><img src="icons/like.svg" id="like" class="icons"></a>
-        <a href="" class="hashtags">#some</a>
-        <a href="" class="hashtags">#hash</a>
-        <a href="" class="hashtags">#tags</a>
-        <p id="description">Description of image... And more description...</p>
+    <div class="main">
+    <template class="post-template">
+        <article class="post-container" data-id="id">
+            <img class="photos"/>
+            <a class="author postDate"></a>
+            <div class="post-container__links">
+                <a href="/edit"><img src="icons/edit.svg" class="icons edit"></a>
+                <a href="/delete"><img src="icons/delete.svg" class="icons delete"></a>
+            </div>
+                <button><img src="icons/like.svg" class="icons like"></button>
+            <p class="description"></p>
+        </article>
+    </template>
     </div>
     <br>
-    <a href="#loadmore" class="load">Load more...</a>
+    <button class="load">Load more...</button>
     <br><br>
 </main>
 <footer>
@@ -98,5 +62,7 @@
         <p class="date">xx.xx.xxxx</p>
         <p class="email">igrek145@gmail.com</p>
 </footer>
+<script src="posts.js">
+</script>
 </body>
 </html>
