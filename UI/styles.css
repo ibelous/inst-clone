@@ -113,7 +113,7 @@ main {
     margin-left: 10px;
     width: 30px;
 }
-.post {
+.main {
     margin: 5px;
     display: block;
     width: 30pc;
@@ -122,14 +122,18 @@ main {
     background: #FFFFFF; /* Цвет фона */
     margin-left: 24pc;
 }
-#author {
-    font-size: 25px;
+.author {
+    font-size: 35px;
     font-weight: bold;
     color: #3D6898;
 }
-#postDate {
-    font-size: 15px;
+.postDate {
+    font-size: 25px;
     color: #5181B8;
+}
+button {
+    background: none;
+    border: none;
 }
 .photos {
     display: block;
@@ -138,15 +142,19 @@ main {
     border: 1px solid #C5D0DB;
 }
 .icons {
+    float: right;
     width: 20px;
     height: auto;
 }
-#edit {
-    margin-left: 15pc;
+.edit {
+    margin-left: 10px;
+    height: 23px;
+    width: auto;
 }
-#like {
+.like {
     width: 30px;
     height: auto;
+    background: none;
 }
 .hashtags {
     font-size: 25px;
@@ -154,7 +162,7 @@ main {
     text-decoration: none;
     color: #597DA3;
 }
-#description {
+.description {
     border: 1px solid #C5D0DB;
     width: 30pc;
     border-radius: 3px;
@@ -171,9 +179,9 @@ main {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    height: 20px;
+    height: 40px;
     margin-left: 35pc;
-    width: 30px;
+    width: 170px;
 }
 .switch {
     display: inline-flex;
