@@ -8,15 +8,18 @@
 </head>
 <body>
 <header>
+    <div class="header">
         <a href="#default" class="logo">InstKiller</a>
         <div class="header-right">
-            <a class="username">ibelous</a>
-            <button><img src="icons/logout.svg" title="Log out" class="logout"></button>
+            <a class="username"></a>
+            <button class="button logout hidden"><img src="icons/logout.svg" title="Log out" class="logout imgLog"></button>
+            <button class="login">Log In</button>
         </div>
+    </div>
 </header>
 <main>
     <div class="up">
-        <a href="#addpost" class="add">Add post</a>
+        <a href="#addpost" class="button add-post hidden">Add post</a>
         <a class="FilterBy">Filter by:</a>
         <a class="filter">
             <input type="checkbox" id="check1"><label for="check1">Date</label>
@@ -43,11 +46,11 @@
         <article class="post-container" data-id="id">
             <img class="photos"/>
             <a class="author postDate"></a>
-            <div class="post-container__links">
-                <a href="/edit"><img src="icons/edit.svg" class="icons edit"></a>
-                <a href="/delete"><img src="icons/delete.svg" class="icons delete"></a>
-            </div>
-                <button><img src="icons/like.svg" class="icons like"></button>
+            <br>
+            <button class="button hidden like"><img src="icons/like.svg" class="icons like_icon"></button>
+            <button class="button hidden edit"><img src="icons/edit.svg" class="icons edit_icon"></button>
+            <button class="button hidden delete"><img src="icons/delete.svg" class="icons delete_icon"></button>
+
             <p class="description"></p>
         </article>
     </template>
@@ -56,13 +59,48 @@
     <button class="load">Load more...</button>
     <br><br>
 </main>
+<div class="add-post-container hidden">
+    <form class="add-post-form" action="#">
+        <p class="add-post-title">Adding Post</p>
+        <label for="desc" class="add-post-desc-label">Description:</label>
+        <textarea class="add-post-desc-input input" id="desc" maxlength="200" required></textarea>
+        <br>
+        <label for="uploadButton" class="add-post-upload-button">Upload file</label>
+        <input style="opacity: 0; z-index: -1; height: 0" type="file" name="upload" id="uploadButton" required/>
+        <br>
+        <button type="submit" class="add-post-add-button">Add post</button>
+    </form>
+</div>
+<div class="edit-post-container hidden">
+    <form class="edit-post-form" action="#">
+        <p class="add-post-title">Editing Post</p>
+        <label for="desc" class="add-post-desc-label">New description:</label>
+        <textarea class="edit-post-desc-input input" maxlength="200" required></textarea>
+        <br>
+        <button type="submit" class="edit-post-add-button">Save</button>
+    </form>
+</div>
 <footer>
         <p class="name">Igor Belous, 7th group</p>
         <p class="bottomlogo">InstKiller</p>
         <p class="date">xx.xx.xxxx</p>
         <p class="email">igrek145@gmail.com</p>
 </footer>
+<dialog id="login-dialog">
+    <form class="dialog" method="dialog">
+        <p class="login-text">Login:</p>
+        <input class="input-name" type="text" placeholder="username" required="" />
+        <p class="login-text">Password:</p>
+        <input class="input-pass" type="password" placeholder="Password" required="" />
+        <button class="submit" type="submit" value="default">Log In</button>
+        <button class="cancel" type="button" value="cancel">Cancel</button>
+    </form>
+</dialog>
 <script src="posts.js">
+</script>
+<script src="control.js">
+</script>
+<script src="AEscript.js">
 </script>
 </body>
 </html>
