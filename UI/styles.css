@@ -29,16 +29,28 @@ header a.username {
     color: #FFFFFF;
 }
 
-header img.logout {
+header img.imgLog {
     width: 40px;
     height: auto;
 }
 
-header img.logout:hover {
+header img.imgLog:hover {
     background-color: #ddd;
     border-radius: 5px;
 }
 
+header .login {
+    font-size: 30px;
+    border-radius: 5px;
+}
+.hidden {
+    display: none;
+}
+
+header .login:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
 .header-right {
     display: inline-flex;
     float: right;
@@ -85,7 +97,7 @@ main {
     padding: 10px 5px;
     display: inline-flex;
 }
-.add {
+.add-post {
     float: left;
     font-size: 25px;
     text-decoration: underline;
@@ -135,6 +147,10 @@ button {
     background: none;
     border: none;
 }
+button:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
 .photos {
     display: block;
     width: 30pc;
@@ -142,16 +158,15 @@ button {
     border: 1px solid #C5D0DB;
 }
 .icons {
-    float: right;
+    display: inline-block;
     width: 20px;
     height: auto;
 }
-.edit {
-    margin-left: 10px;
+.edit_icon {
     height: 23px;
     width: auto;
 }
-.like {
+.like_icon {
     width: 30px;
     height: auto;
     background: none;
@@ -220,4 +235,34 @@ ul {
 }
 .switch ul li:hover .submenu {
     display: block;
+}
+.add-post-container {
+    color: #3D6898;
+    font-size: 25px;
+    background-color: #E7E8EC;
+    width: 30pc;
+    margin-left: 25pc;
+    margin-top: -25px;
+}
+.edit-post-container {
+    color: #3D6898;
+    font-size: 25px;
+    background-color: #E7E8EC;
+    width: 30pc;
+    margin-left: 25pc;
+    margin-top: -25px;
+}
+.add-post-upload-button {
+    border: 0.5px solid #001433;
+    background-color: #C5D0DB;
+}
+.add-post-add-button {
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #5181B8;
+}
+.edit-post-add-button {
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #5181B8;
 }
